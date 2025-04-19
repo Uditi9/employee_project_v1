@@ -30,3 +30,7 @@ docker-compose exec web python manage.py generate_data
 - CSV export endpoint
 - Health check endpoint
 - view performance chart - /performance-chart/
+
+  ##credentials
+username - admin
+password - admin
