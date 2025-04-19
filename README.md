@@ -20,6 +20,7 @@ docker-compose exec web python manage.py generate_data
    - API: http://localhost:8000/api/
    - Swagger UI: http://localhost:8000/swagger/
    - Health Check: http://localhost:8000/health/
+   - Performance chart: http://localhost:8000/performance-chart/
 
 ## Features
 
