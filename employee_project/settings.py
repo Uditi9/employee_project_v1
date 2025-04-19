@@ -17,14 +17,14 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'
 #ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR , 'db.sqlite3'),  # Creates a file named db.sqlite3 in your base directory
     }
 }
-'''
+
 
 # Application definition
 INSTALLED_APPS = [
@@ -68,16 +68,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'employee_project.wsgi.application'
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'employees_db'),
-        'USER': os.environ.get('DB_USER', 'user'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'password'),
-        'HOST': os.environ.get('DB_HOST', 'db'),
-        'PORT': '5432',
-    }
-}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
